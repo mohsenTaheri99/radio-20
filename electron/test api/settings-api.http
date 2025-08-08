@@ -1,0 +1,9 @@
+### GET request to localhost get all settings
+GET http://localhost:3000/api/settings/all
+Accept: application/json
+
+### POST request add new setting
+POST http://localhost:3000/api/settings/settings
+Content-Type: application/json
+
+

@@ -1,0 +1,59 @@
+### GET request to localhost
+GET http://localhost:3000
+Accept: application/json
+
+### GET request to localhost get all patiensts
+GET http://localhost:3000/api/patient/all
+Accept: application/json
+
+### POST request add new patient
+POST http://localhost:3000/api/patient/add-new
+Content-Type: application/json
+
+{
+  "patient":
+    {
+      "name": "mohsen taheri",
+      "nationalId": "1234567893",
+      "phone": "09123456789",
+      "birthDate": "1985-05-20",
+      "gender": "male",
+      "createdBy": "60c72b2f9b1d8e1a4c8f9a12",
+      "visits": [
+        {
+          "paidAmount": 100000, // مبلغ پرداختی
+          "totalAmount": 100000, // مبلغ کل
+          "withoutDiscount": true,
+          "insurance": "tamin eshtemay",
+          "radiologyType": "MRI",
+          "doctorName": "دکتر احمدی",
+          "notes": "نیاز به بررسی بیشتر",
+          "createdBy": "60c72b2f9b1d8e1a4c8f9a12"
+        },
+      ]
+    }
+}
+
+### POST request add new patient no te
+POST http://localhost:3000/api/patient/add-note
+Content-Type: application/json
+
+{
+  "note" : "this not add right for tseting .",
+  "index" : 1,
+  "patientId" : "6869830ee5576fea1cc2d075"
+}
+
+### GET on by id
+GET http://localhost:3000/api/patient/6869830ee5576fea1cc2d075
+Content-Type: application/json
+
+
+### GET on by natinalid
+GET http://localhost:3000/api/patient/by-national-id/1234567890
+Content-Type: application/json
+
+
+### GET on by name
+GET http://localhost:3000/api/patient/by-name/mohsen
+Content-Type: application/json

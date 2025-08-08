@@ -1,0 +1,29 @@
+{
+  "name": "radio 20",
+  "version": "1.0.0",
+  "main": "./dist/index.js",
+  "scripts": {
+    "electronDev": "",
+    "build": "tsc",
+    "start": "npm run build && electron .",
+    "devstart": "concurrently -k \"tsc --watch\" \"npx wait-on dist/index.js && npx electron .\""
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@types/multer": "^2.0.0",
+    "cors": "^2.8.5",
+    "electron": "^28.3.3",
+    "express": "^5.1.0",
+    "mongoose": "^8.16.1",
+    "multer": "^2.0.1"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.3",
+    "@types/mongoose": "^5.11.96",
+    "concurrently": "^9.2.0",
+    "typescript": "^5.8.3"
+  }
+}

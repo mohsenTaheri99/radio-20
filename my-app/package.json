@@ -1,0 +1,49 @@
+{
+  "name": "my-candy-game",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@lexical/markdown": "^0.33.0",
+    "@lexical/react": "^0.32.1",
+    "@tailwindcss/vite": "^4.1.11",
+    "@tanstack/react-query": "^5.81.5",
+    "@types/axios": "^0.9.36",
+    "axios": "^1.10.0",
+    "fast-levenshtein": "^3.0.0",
+    "lexical": "^0.32.1",
+    "lexical-better-mentions": "^0.2.0",
+    "lodash": "^4.17.21",
+    "react": "^19.1.0",
+    "react-contenteditable": "^3.3.7",
+    "react-dom": "^19.1.0",
+    "react-icons": "^5.5.0",
+    "react-router-dom": "^7.6.3",
+    "react-to-print": "^3.1.1",
+    "sanitize-html": "^2.17.0",
+    "tailwindcss": "^4.1.11",
+    "textarea-caret": "^3.1.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.29.0",
+    "@types/fast-levenshtein": "^0.0.4",
+    "@types/lodash": "^4.17.20",
+    "@types/react": "^19.1.8",
+    "@types/react-dom": "^19.1.6",
+    "@types/sanitize-html": "^2.16.0",
+    "@vitejs/plugin-react": "^4.5.2",
+    "eslint": "^9.29.0",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-refresh": "^0.4.20",
+    "globals": "^16.2.0",
+    "typescript": "~5.8.3",
+    "typescript-eslint": "^8.34.1",
+    "vite": "^7.0.0"
+  }
+}
